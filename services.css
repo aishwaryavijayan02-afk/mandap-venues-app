@@ -1,0 +1,147 @@
+.service-content {
+  padding-bottom: 24px;
+}
+
+.service-eyebrow {
+  color: #4f08c9;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.service-content > h2 {
+  margin-top: 8px;
+}
+
+.service-form {
+  display: grid;
+  gap: 16px;
+}
+
+.service-form fieldset {
+  display: grid;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.service-form legend,
+.service-field {
+  color: #292b3e;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.service-options {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.service-option {
+  min-height: 47px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 12px;
+  border: 1px solid #e1e3ee;
+  border-radius: 10px;
+  background: #fff;
+  color: #292b3e;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.service-option:has(input:checked) {
+  border-color: #6b32d6;
+  background: #f4efff;
+}
+
+.service-option input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #4f06c8;
+}
+
+.service-field {
+  display: grid;
+  gap: 7px;
+}
+
+.service-field input {
+  width: 100%;
+  height: 43px;
+  padding: 0 11px;
+  border: 1px solid #e1e3ee;
+  border-radius: 9px;
+  background: #fff;
+  color: #17192b;
+  font: inherit;
+  font-size: 13px;
+}
+
+.service-submit {
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+}
+
+.service-status {
+  padding: 11px;
+  border-radius: 9px;
+  background: #e8f8f0;
+  color: #075f45;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.service-demo-note {
+  margin: 16px 0 0;
+  color: #676a7c;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.service-back-link {
+  display: inline-block;
+  margin-top: 14px;
+  color: #4f08c9;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+:root[data-theme="dark"] .service-eyebrow,
+:root[data-theme="dark"] .service-back-link {
+  color: #c3a4ff;
+}
+
+:root[data-theme="dark"] .service-form legend,
+:root[data-theme="dark"] .service-field {
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .service-option,
+:root[data-theme="dark"] .service-field input {
+  border-color: var(--theme-border);
+  background: var(--theme-field);
+  color: var(--theme-text);
+  color-scheme: dark;
+}
+
+:root[data-theme="dark"] .service-option:has(input:checked) {
+  border-color: #7854b4;
+  background: #29263a;
+}
+
+:root[data-theme="dark"] .service-status {
+  background: var(--theme-green-soft);
+  color: #a5f0cf;
+}
+
+:root[data-theme="dark"] .service-demo-note {
+  color: var(--theme-muted);
+}

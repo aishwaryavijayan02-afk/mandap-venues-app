@@ -1,0 +1,151 @@
+.admin-shell {
+  padding-bottom: 32px;
+}
+
+.admin-card {
+  margin-top: clamp(28px, 8vh, 70px);
+}
+
+.admin-warning {
+  margin: 0 0 20px;
+  padding: 11px 12px;
+  border: 1px solid rgb(176 104 21 / 24%);
+  border-radius: 10px;
+  background: rgb(255 242 201 / 58%);
+  color: #67430f;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.demo-credentials,
+.admin-help {
+  margin: 12px 0 0;
+  color: #646779;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.admin-editor {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgb(106 84 149 / 20%);
+}
+
+.admin-editor-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 17px;
+}
+
+.admin-editor-heading h2 {
+  margin: 0;
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+}
+
+.admin-logout,
+.admin-remove {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid rgb(90 55 150 / 28%);
+  border-radius: 9px;
+  background: rgb(255 255 255 / 55%);
+  color: #4f06c8;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-editor label {
+  display: block;
+  margin: 14px 0 6px;
+  color: #292b3e;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.admin-editor select,
+.admin-editor input[type="file"] {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px;
+  border: 1px solid rgb(255 255 255 / 80%);
+  border-radius: 9px;
+  background: rgb(255 255 255 / 70%);
+  color: #17192b;
+  font: inherit;
+  font-size: 12px;
+}
+
+.admin-editor select {
+  padding-right: 32px;
+}
+
+.admin-preview {
+  width: 100%;
+  height: 190px;
+  display: block;
+  margin-top: 14px;
+  border: 1px solid rgb(255 255 255 / 80%);
+  border-radius: 12px;
+  background: rgb(255 255 255 / 30%);
+  object-fit: cover;
+}
+
+.admin-actions {
+  display: grid;
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.admin-actions .login-submit {
+  width: 100%;
+  margin-top: 0;
+}
+
+.admin-status {
+  padding: 10px 12px;
+  border-radius: 9px;
+  background: rgb(255 255 255 / 45%);
+}
+
+:root[data-theme="dark"] .admin-warning {
+  border-color: rgb(255 211 115 / 30%);
+  background: rgb(94 67 22 / 38%);
+  color: #ffe2a1;
+}
+
+:root[data-theme="dark"] .demo-credentials,
+:root[data-theme="dark"] .admin-help {
+  color: var(--theme-muted);
+}
+
+:root[data-theme="dark"] .admin-editor label {
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .admin-logout,
+:root[data-theme="dark"] .admin-remove {
+  border-color: rgb(255 255 255 / 28%);
+  background: rgb(25 26 42 / 50%);
+  color: #d3b9ff;
+}
+
+:root[data-theme="dark"] .admin-editor select,
+:root[data-theme="dark"] .admin-editor input[type="file"] {
+  border-color: rgb(255 255 255 / 24%);
+  background: rgb(18 22 39 / 55%);
+  color: var(--theme-text);
+  color-scheme: dark;
+}
+
+:root[data-theme="dark"] .admin-preview {
+  border-color: rgb(255 255 255 / 25%);
+}
+
+:root[data-theme="dark"] .admin-status {
+  background: rgb(18 22 39 / 55%);
+}

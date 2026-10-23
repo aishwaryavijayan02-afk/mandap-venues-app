@@ -1,0 +1,483 @@
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --theme-page: #10121b;
+  --theme-panel: #1b1e2a;
+  --theme-raised: #242838;
+  --theme-field: #262c3e;
+  --theme-text: #f0f1f7;
+  --theme-muted: #b0b4c4;
+  --theme-border: #303444;
+  --theme-chip: #30364b;
+  --theme-blue: #242e49;
+  --theme-purple-soft: #33254c;
+  --theme-green-soft: #1d3a34;
+}
+
+:root[data-theme="dark"] body {
+  background: var(--theme-page);
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .app-shell,
+:root[data-theme="dark"] .results-shell,
+:root[data-theme="dark"] .detail-shell,
+:root[data-theme="dark"] .reservation-shell,
+:root[data-theme="dark"] .receipt-shell {
+  background: var(--theme-page);
+  color: var(--theme-text);
+  box-shadow: 0 0 55px rgb(0 0 0 / 18%);
+}
+
+:root[data-theme="dark"] .topbar,
+:root[data-theme="dark"] .results-header,
+:root[data-theme="dark"] .detail-header,
+:root[data-theme="dark"] .reservation-header,
+:root[data-theme="dark"] .receipt-header {
+  border-color: var(--theme-border);
+  background: #151722;
+}
+
+:root[data-theme="dark"] .brand-page,
+:root[data-theme="dark"] .results-header h1,
+:root[data-theme="dark"] .detail-header h1,
+:root[data-theme="dark"] .reservation-header h1,
+:root[data-theme="dark"] .receipt-header h1,
+:root[data-theme="dark"] .section-heading h2,
+:root[data-theme="dark"] .venue-info h3,
+:root[data-theme="dark"] .location-copy strong,
+:root[data-theme="dark"] .results-heading h2,
+:root[data-theme="dark"] .availability-heading h2,
+:root[data-theme="dark"] .panel h2,
+:root[data-theme="dark"] .section-title h2,
+:root[data-theme="dark"] .request-status h2,
+:root[data-theme="dark"] .venue-hero-copy > strong {
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .avatar-button,
+:root[data-theme="dark"] .profile-button,
+:root[data-theme="dark"] .profile-avatar {
+  border-color: var(--theme-border);
+  background: var(--theme-blue);
+  color: #c3a4ff;
+}
+
+:root[data-theme="dark"] .topbar .icon-button svg,
+:root[data-theme="dark"] .results-header .header-icon svg,
+:root[data-theme="dark"] .detail-header .header-share svg,
+:root[data-theme="dark"] .reservation-header .share-button svg,
+:root[data-theme="dark"] .receipt-header .share-button svg,
+:root[data-theme="dark"] .back-button svg,
+:root[data-theme="dark"] .back-link svg {
+  stroke: #eef0f7;
+}
+
+:root[data-theme="dark"] .magic-button {
+  background: #33254c;
+}
+
+:root[data-theme="dark"] .intro > p,
+:root[data-theme="dark"] .section-subtitle,
+:root[data-theme="dark"] .category-caption,
+:root[data-theme="dark"] .venue-address,
+:root[data-theme="dark"] .detail-label,
+:root[data-theme="dark"] .section-subtitle,
+:root[data-theme="dark"] .event-copy > span,
+:root[data-theme="dark"] .result-address,
+:root[data-theme="dark"] .rent-copy,
+:root[data-theme="dark"] .price-line,
+:root[data-theme="dark"] .advance-box small,
+:root[data-theme="dark"] .amenities-panel li,
+:root[data-theme="dark"] .trust-row small,
+:root[data-theme="dark"] .request-status p,
+:root[data-theme="dark"] .pass-preview > small,
+:root[data-theme="dark"] .detail-row > div > span,
+:root[data-theme="dark"] .detail-row small,
+:root[data-theme="dark"] .payment-line > span {
+  color: var(--theme-muted);
+}
+
+:root[data-theme="dark"] .search-bar,
+:root[data-theme="dark"] .category-card:not(.selected),
+:root[data-theme="dark"] .event-details,
+:root[data-theme="dark"] .venue-card,
+:root[data-theme="dark"] .bottom-nav,
+:root[data-theme="dark"] .event-summary,
+:root[data-theme="dark"] .result-card,
+:root[data-theme="dark"] .filter-dialog,
+:root[data-theme="dark"] .venue-facts,
+:root[data-theme="dark"] .panel,
+:root[data-theme="dark"] .booking-bar,
+:root[data-theme="dark"] .booking-dialog,
+:root[data-theme="dark"] .progress-card,
+:root[data-theme="dark"] .selected-venue-card,
+:root[data-theme="dark"] .form-panel,
+:root[data-theme="dark"] .trust-row,
+:root[data-theme="dark"] .confirm-bar,
+:root[data-theme="dark"] .receipt-card {
+  border-color: var(--theme-border);
+  background: var(--theme-panel);
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .venue-info,
+:root[data-theme="dark"] .venue-card,
+:root[data-theme="dark"] .form-panel,
+:root[data-theme="dark"] .receipt-card {
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .bottom-nav {
+  background: rgb(24 26 37 / 97%);
+}
+
+:root[data-theme="dark"] .category-card.selected {
+  background: #6420df;
+  color: white;
+}
+
+:root[data-theme="dark"] .category-icon.soft-blue {
+  background: #30364b;
+  color: #d4d7e2;
+}
+
+:root[data-theme="dark"] .event-tags .event-tag:not(.active),
+:root[data-theme="dark"] .meta-tile,
+:root[data-theme="dark"] .amenities span,
+:root[data-theme="dark"] .spec-item,
+:root[data-theme="dark"] .fact,
+:root[data-theme="dark"] .month-switcher,
+:root[data-theme="dark"] .availability-legend,
+:root[data-theme="dark"] .calendar-day,
+:root[data-theme="dark"] .input-with-icon,
+:root[data-theme="dark"] .location-copy select,
+:root[data-theme="dark"] .location-add-row input,
+:root[data-theme="dark"] .text-field,
+:root[data-theme="dark"] .select-field,
+:root[data-theme="dark"] .session-field,
+:root[data-theme="dark"] .notes-field,
+:root[data-theme="dark"] .payment-option,
+:root[data-theme="dark"] .payment-summary,
+:root[data-theme="dark"] .request-id-row,
+:root[data-theme="dark"] .advance-box {
+  background-color: var(--theme-field);
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .calendar-day.hold {
+  background: #443622;
+}
+
+:root[data-theme="dark"] .calendar-day.selected {
+  background: #630fe0;
+  color: white;
+}
+
+:root[data-theme="dark"] .calendar-day.booked {
+  color: #a3a7b6;
+}
+
+:root[data-theme="dark"] .calendar-day.empty {
+  background: transparent;
+}
+
+:root[data-theme="dark"] .filter-chip,
+:root[data-theme="dark"] .filter-chip.budget-chip,
+:root[data-theme="dark"] .date-pill,
+:root[data-theme="dark"] .selected-date-card {
+  border-color: var(--theme-border);
+  background: var(--theme-chip);
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .filter-chip.active,
+:root[data-theme="dark"] .filter-chip[data-filter="capacity"].active {
+  border-color: #6422d6;
+  background: #5a1cc1;
+  color: white;
+}
+
+:root[data-theme="dark"] .selected-date-card,
+:root[data-theme="dark"] .advance-box {
+  background: var(--theme-purple-soft);
+}
+
+:root[data-theme="dark"] .selected-date-card strong,
+:root[data-theme="dark"] .date-pill,
+:root[data-theme="dark"] .progress-step,
+:root[data-theme="dark"] .progress-step.future,
+:root[data-theme="dark"] .weekday,
+:root[data-theme="dark"] .calendar-day:not(.selected),
+:root[data-theme="dark"] .meta-tile strong,
+:root[data-theme="dark"] .event-tag:not(.active),
+:root[data-theme="dark"] .price-copy strong small,
+:root[data-theme="dark"] .rent-copy,
+:root[data-theme="dark"] .price-line strong,
+:root[data-theme="dark"] .advance-box small,
+:root[data-theme="dark"] .payment-summary > div > strong,
+:root[data-theme="dark"] .advance-summary > span > strong,
+:root[data-theme="dark"] .payment-option-copy > strong,
+:root[data-theme="dark"] .payment-option-copy > small,
+:root[data-theme="dark"] .payment-methods legend,
+:root[data-theme="dark"] .field-label,
+:root[data-theme="dark"] .notes-heading > span:last-child,
+:root[data-theme="dark"] .selected-venue-copy > strong,
+:root[data-theme="dark"] .selected-venue-meta,
+:root[data-theme="dark"] .event-copy strong,
+:root[data-theme="dark"] .request-id-row > div > span,
+:root[data-theme="dark"] .request-id,
+:root[data-theme="dark"] .detail-row strong,
+:root[data-theme="dark"] .payment-line > strong,
+:root[data-theme="dark"] .demo-notice {
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .event-tag.active,
+:root[data-theme="dark"] .selected .category-caption {
+  color: white;
+}
+
+:root[data-theme="dark"] .selected-date-card > div > span,
+:root[data-theme="dark"] .advance-summary small,
+:root[data-theme="dark"] .slot-status {
+  color: #78e8b6;
+}
+
+:root[data-theme="dark"] .price-line .included {
+  color: #78e8b6;
+}
+
+:root[data-theme="dark"] .pricing-panel .deposit-line {
+  border-color: var(--theme-border);
+}
+
+:root[data-theme="dark"] .booking-price > strong,
+:root[data-theme="dark"] .booking-price > span,
+:root[data-theme="dark"] .gateway-note {
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .detail-icon,
+:root[data-theme="dark"] .step-marker,
+:root[data-theme="dark"] .request-id-row button,
+:root[data-theme="dark"] .back-to-venues,
+:root[data-theme="dark"] .share-action {
+  border-color: var(--theme-border);
+  background: var(--theme-blue);
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .step-marker {
+  background: var(--theme-blue);
+}
+
+:root[data-theme="dark"] .progress-step.completed .step-marker {
+  background: #08774e;
+}
+
+:root[data-theme="dark"] .progress-step.current .step-marker {
+  background: #590bd1;
+  color: white;
+}
+
+:root[data-theme="dark"] .payment-option.selected {
+  border-color: #563f7d;
+  background: #29263a;
+}
+
+:root[data-theme="dark"] .upi-selection {
+  background: var(--theme-purple-soft);
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .trust-row {
+  background: var(--theme-panel);
+}
+
+:root[data-theme="dark"] .demo-notice,
+:root[data-theme="dark"] .pass-preview > small {
+  color: var(--theme-muted);
+}
+
+:root[data-theme="dark"] .payment-heading > span,
+:root[data-theme="dark"] .request-id-row button {
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .request-id {
+  color: #c3a4ff;
+}
+
+:root[data-theme="dark"] .payment-heading > strong {
+  background: #443622;
+  color: #ffe0a1;
+}
+
+:root[data-theme="dark"] .notice-card {
+  border-color: #65512e;
+  background: #31291c;
+}
+
+:root[data-theme="dark"] .notice-card strong,
+:root[data-theme="dark"] .notice-card small {
+  color: #f3d99e;
+}
+
+:root[data-theme="dark"] .payment-progress {
+  background: #34394a;
+}
+
+:root[data-theme="dark"] .map-preview,
+:root[data-theme="dark"] .venue-cover,
+:root[data-theme="dark"] .result-photo,
+:root[data-theme="dark"] .venue-photo {
+  background-color: #242838;
+}
+
+:root[data-theme="dark"] .map-direction {
+  background: rgb(27 30 42 / 94%);
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .filter-dialog select,
+:root[data-theme="dark"] .location-copy select,
+:root[data-theme="dark"] .location-add-row input,
+:root[data-theme="dark"] .event-field select,
+:root[data-theme="dark"] .event-field input,
+:root[data-theme="dark"] .input-with-icon input,
+:root[data-theme="dark"] .input-with-icon select,
+:root[data-theme="dark"] .text-field,
+:root[data-theme="dark"] .select-field,
+:root[data-theme="dark"] .session-field,
+:root[data-theme="dark"] .notes-field,
+:root[data-theme="dark"] #booking-form input {
+  border-color: var(--theme-border);
+  background-color: var(--theme-field);
+  color: var(--theme-text);
+  color-scheme: dark;
+  -webkit-text-fill-color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .input-with-icon input,
+:root[data-theme="dark"] .input-with-icon select {
+  border-color: transparent;
+  background: transparent;
+}
+
+:root[data-theme="dark"] .input-with-icon > svg {
+  stroke: var(--theme-muted);
+}
+
+:root[data-theme="dark"] .text-field::placeholder,
+:root[data-theme="dark"] .notes-field::placeholder,
+:root[data-theme="dark"] .location-add-row input::placeholder,
+:root[data-theme="dark"] .event-field input::placeholder {
+  color: #aeb4c7;
+  -webkit-text-fill-color: #aeb4c7;
+  opacity: 1;
+}
+
+:root[data-theme="dark"] select option {
+  background: var(--theme-field);
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .dialog-close {
+  background: var(--theme-field);
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .dialog-actions {
+  border-color: var(--theme-border);
+}
+
+:root[data-theme="dark"] .clear-filters,
+:root[data-theme="dark"] .payment-dialog > .close-payment {
+  border-color: var(--theme-border);
+  background: var(--theme-panel);
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .payment-dialog,
+:root[data-theme="dark"] .filter-dialog {
+  color: var(--theme-text);
+}
+
+:root[data-theme="dark"] .payment-dialog p,
+:root[data-theme="dark"] .sort-select-label,
+:root[data-theme="dark"] .filter-options label,
+:root[data-theme="dark"] .booking-note,
+:root[data-theme="dark"] .booking-venue-name,
+:root[data-theme="dark"] .booking-summary span {
+  color: var(--theme-muted);
+}
+
+:root[data-theme="dark"] .booking-summary {
+  background: var(--theme-field);
+}
+
+:root[data-theme="dark"] .booking-summary strong {
+  color: var(--theme-text);
+}
+
+.theme-toggle {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+  color: #51418b;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: #e7e2f5;
+  background: #f2edff;
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid #6b32d6;
+  outline-offset: 2px;
+}
+
+.theme-toggle svg {
+  width: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.theme-toggle .sun-icon {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle {
+  color: #f3cf78;
+}
+
+:root[data-theme="dark"] .theme-toggle:hover {
+  border-color: #4a4059;
+  background: #292434;
+}
+
+:root[data-theme="dark"] .theme-toggle .moon-icon {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle .sun-icon {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root[data-theme] *,
+  :root[data-theme] *::before,
+  :root[data-theme] *::after {
+    transition-duration: .01ms !important;
+  }
+}
